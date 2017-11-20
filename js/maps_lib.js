@@ -160,6 +160,7 @@
         self.searchRadius = $("#search_radius").val();
         self.whereClause = self.locationColumn + " not equal to ''";
         
+        /*
         //-----custom filters-----
         var type_column = "'Type ID'";
         var searchType = type_column + " IN (-1,";
@@ -175,6 +176,7 @@
             $.address.parameter('name', encodeURIComponent(name_search));
         }
         //-----end of custom filters-----
+        */
 
         self.getgeoCondition(address, function (geoCondition) {
             self.whereClause += geoCondition;
