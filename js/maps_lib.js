@@ -321,7 +321,7 @@
         self.query({
             select: selectColumns,
             where: whereClause,
-            orderBy: 'Name'
+            orderBy: 'District'
         }, function (json) {
             self.displayList(json);
         });
