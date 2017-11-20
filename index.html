@@ -211,19 +211,7 @@
           });
 
 
-          $('#viewmode').click(function(){
-            if ($('#map_canvas').is(":visible")){
-              $('#viewmode').html("<i class='fa fa-map-marker'></i> Map view");
-              $('#listview').show();
-              $('#map_canvas').hide();
-          }
 
-          else {
-            $('#viewmode').html("<i class='fa fa-list'></i> List view");
-            $('#map_canvas').show();
-              $('#listview').hide();
-          } 
-           });
           
           $(":text").keydown(function(e){
               var key =  e.keyCode ? e.keyCode : e.which;
